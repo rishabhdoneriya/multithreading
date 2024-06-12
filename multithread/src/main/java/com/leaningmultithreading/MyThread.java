@@ -3,6 +3,9 @@ package com.leaningmultithreading;
 public class MyThread extends Thread {
     @Override
     public void run(){
-        System.out.println("Body Provided to the thread.");
+       for (int i = 1; i <= 10; i++) {
+            System.out.println(i+" "+Thread.currentThread().getName());
+           
+       }
     }
 }
